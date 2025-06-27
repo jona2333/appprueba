@@ -1,8 +1,8 @@
-# 🚀 Dashboard de Gestión de Proyectos
+# 🚀 Dashboard de Gestión de Proyectos y Equipo
 
-Un dashboard profesional y moderno para la gestión integral de proyectos, desarrollado con tecnologías web fundamentales (HTML5, CSS3, JavaScript ES6+).
+Un dashboard profesional y moderno para la gestión integral de proyectos y equipos de trabajo, desarrollado con tecnologías web fundamentales (HTML5, CSS3, JavaScript ES6+).
 
-![Dashboard Preview](https://img.shields.io/badge/Status-Activo-brightgreen) ![Version](https://img.shields.io/badge/Version-1.0.0-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Dashboard Preview](https://img.shields.io/badge/Status-Activo-brightgreen) ![Version](https://img.shields.io/badge/Version-2.0.0-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 📋 Tabla de Contenidos
 
@@ -26,23 +26,35 @@ Un dashboard profesional y moderno para la gestión integral de proyectos, desar
 - 🏷️ Sistema de prioridades (Alta, Media, Baja)
 - 📈 Estados automáticos basados en progreso
 
-### 📊 **Visualización de Datos**
+### 👥 **Sistema de Gestión de Equipo** *(NUEVO)*
+- 👤 CRUD completo de miembros del equipo
+- 🔍 Búsqueda y filtros avanzados (rol, departamento, estado)
+- 📧 Gestión de información de contacto y habilidades
+- 🎯 Asignación bidireccional de miembros a proyectos
+- 📊 Estados de miembros (Activo, Inactivo, En vacaciones)
+- 🏢 Organización por departamentos y roles
+
+### 📊 **Visualización de Datos Avanzada**
 - 🥧 Gráficos interactivos con Chart.js
-- 📈 Estadísticas en tiempo real
+- 📈 Estadísticas en tiempo real de proyectos y equipo
 - 🎨 Barras de progreso animadas
 - 📱 Diseño responsive y adaptativo
+- 📋 Dashboard de asignaciones proyecto-miembro
+- 🏆 Sistema de puntuación de productividad
 
 ### 🛠️ **Herramientas Integradas**
 - ⏰ Reloj en tiempo real
-- 📊 Calculadora de productividad
-- 🌤️ Widget informativo del clima
+- 📊 Calculadora de productividad mejorada
 - 🔔 Sistema de notificaciones toast
+- 💾 Persistencia automática de datos
+- 📤 Exportación/importación de datos
 
 ### 🎨 **Experiencia de Usuario**
 - ✨ Efectos glassmorphism modernos
 - 🎭 Animaciones suaves y naturales
 - 📱 Completamente responsive
 - ♿ Accesibilidad web integrada
+- 🚀 Navegación por secciones (Proyectos, Equipo, Asignaciones)
 
 ## 🌐 Demo
 
@@ -134,20 +146,93 @@ npx serve .
 
 ### Interpretación de Estadísticas
 
-- **Proyectos Activos**: Total de proyectos no completados
-- **Miembros del Equipo**: Número fijo configurable
-- **Proyectos Completados**: Proyectos al 100%
-- **Progreso Promedio**: Media de todos los proyectos
+- **Proyectos Totales**: Total de proyectos creados
+- **Miembros del Equipo**: Total de miembros registrados  
+- **Puntuación de Productividad**: Métrica calculada basada en progreso, miembros activos y distribución de carga
+- **Tasa de Finalización**: Promedio de progreso de todos los proyectos
+
+## 👥 Gestión de Miembros del Equipo
+
+### ➕ **Agregar Nuevo Miembro**
+
+1. Haz clic en **"Miembros de Equipo"** en el header o navega a la sección "Equipo"
+2. Pulsa **"Agregar Miembro"**
+3. Completa el formulario:
+   - **Información básica**: Nombre, email, teléfono
+   - **Rol profesional**: Developer, Designer, Manager, Analyst, Tester
+   - **Departamento**: IT, Marketing, Sales, HR, Finance
+   - **Estado**: Activo, Inactivo, En vacaciones
+   - **Habilidades**: Lista separada por comas
+   - **Ubicación**: Ciudad, país
+4. Haz clic en **"Agregar Miembro"**
+
+### ✏️ **Editar Miembro Existente**
+
+1. Localiza el miembro en la vista de equipo
+2. Haz clic en el icono **✏️ Editar**
+3. Modifica los campos necesarios
+4. Confirma con **"Actualizar Miembro"**
+
+### 🗑️ **Eliminar Miembro**
+
+1. Localiza el miembro en la lista
+2. Haz clic en el icono **🗑️ Eliminar**
+3. Confirma la acción (se removerá de todos los proyectos)
+
+### 🔍 **Búsqueda y Filtros**
+
+- **Búsqueda en tiempo real**: Busca por nombre, email o habilidades
+- **Filtro por rol**: Filtra por Developer, Designer, Manager, etc.
+- **Filtro por departamento**: Filtra por IT, Marketing, Sales, etc.
+- **Estado**: Visualiza el estado actual (activo, inactivo, vacaciones)
+
+### 🎯 **Asignación a Proyectos**
+
+#### Desde la Vista de Equipo:
+1. Haz clic en **🎯 Ver proyectos** del miembro
+2. Visualiza proyectos actuales asignados
+
+#### Desde la Vista de Asignaciones:
+1. Navega a la sección **"Asignaciones"**
+2. Selecciona un proyecto
+3. Haz clic en **"Asignar Miembro"**
+4. Selecciona el miembro disponible
+5. Confirma la asignación
+
+#### Remover Asignaciones:
+1. En la vista de asignaciones
+2. Haz clic en **❌** junto al miembro asignado
+3. Confirma la remoción
+
+### 📊 **Visualización de Datos del Equipo**
+
+#### Estadísticas Rápidas:
+- **Desarrolladores**: Cantidad de developers
+- **Diseñadores**: Cantidad de designers  
+- **Managers**: Cantidad de managers
+- **Departamentos**: Número de departamentos únicos
+
+#### Gráficos Interactivos:
+- **Distribución por Roles**: Gráfico de dona mostrando proporción de roles
+- **Distribución por Departamentos**: Gráfico de barras por departamento
+
+### 💡 **Consejos de Uso**
+
+- **Emails únicos**: Cada miembro debe tener un email único
+- **Habilidades detalladas**: Agregar habilidades específicas facilita la búsqueda
+- **Estados actualizados**: Mantener estados actualizados para métricas precisas
+- **Asignaciones balanceadas**: Distribuir proyectos equitativamente entre miembros
 
 ## 📁 Estructura del Proyecto
 
 ```
 dashboard-proyectos/
 │
-├── 📄 index.html              # Estructura HTML principal
-├── 🎨 styles.css              # Estilos y diseño visual
-├── ⚡ script.js               # Lógica de aplicación
-└── 📖 README.md               # Documentación
+├── 📄 dashboard.html           # Estructura HTML principal del dashboard
+├── 🎨 styles.css               # Estilos y diseño visual completo
+├── ⚡ script.js                # Lógica de aplicación con todos los módulos
+├── 📖 README.md                # Documentación completa
+└── 🧪 test.html                # Página de pruebas (opcional)
 ```
 
 ### Arquitectura del Código JavaScript
@@ -166,6 +251,9 @@ CONFIG = {
 ├── NotificationSystem         # Sistema de notificaciones
 ├── TimeManager               # Gestión de tiempo
 ├── ProjectManager            # CRUD de proyectos
+├── TeamMemberManager         # CRUD de miembros del equipo
+├── AssignmentManager         # Gestión de asignaciones
+├── GlobalStatsManager        # Estadísticas globales
 ├── ChartManager              # Gráficos y visualización
 ├── ProductivityCalculator    # Cálculos de productividad
 ├── FormManager               # Validación de formularios
@@ -196,13 +284,17 @@ CONFIG = {
 | Funcionalidad | Descripción | Estado |
 |---------------|-------------|---------|
 | 📝 CRUD Proyectos | Crear, leer, actualizar, eliminar | ✅ Completo |
+| 👥 CRUD Miembros | Gestión completa de equipo | ✅ Completo |
+| 🔍 Búsqueda/Filtros | Búsqueda en tiempo real y filtros avanzados | ✅ Completo |
+| 🎯 Asignaciones | Sistema bidireccional proyecto-miembro | ✅ Completo |
 | 📊 Gráficos | Visualización con Chart.js | ✅ Completo |
 | 📈 Estadísticas | Métricas en tiempo real | ✅ Completo |
 | 🔔 Notificaciones | Sistema toast no intrusivo | ✅ Completo |
 | ⏰ Reloj | Tiempo actual actualizado | ✅ Completo |
-| 📊 Productividad | Calculadora con métricas | ✅ Completo |
+| 📊 Productividad | Calculadora con métricas mejoradas | ✅ Completo |
 | 📱 Responsive | Adaptable a todos los dispositivos | ✅ Completo |
 | ♿ Accesibilidad | WCAG 2.1 AA compliance | ✅ Completo |
+| 💾 Persistencia | Almacenamiento automático LocalStorage | ✅ Completo |
 
 ### Funcionalidades Avanzadas
 
@@ -252,6 +344,65 @@ ProjectManager.delete(projectId);
 
 // Renderizar vista
 ProjectManager.render();
+```
+
+### TeamMemberManager API
+
+```javascript
+// Crear miembro del equipo
+TeamMemberManager.create({
+  name: "Ana García",
+  email: "ana@empresa.com",
+  role: "Developer",
+  department: "IT",
+  status: "active",
+  skills: "JavaScript, React, Node.js",
+  location: "Ciudad de México"
+});
+
+// Actualizar miembro
+TeamMemberManager.update(memberId, {
+  name: "Ana García López",
+  status: "vacation"
+});
+
+// Eliminar miembro
+TeamMemberManager.delete(memberId);
+
+// Asignar a proyecto
+TeamMemberManager.assignToProject(memberId, projectId);
+
+// Remover de proyecto
+TeamMemberManager.removeFromProject(memberId, projectId);
+
+// Renderizar vista
+TeamMemberManager.render();
+
+// Actualizar estadísticas
+TeamMemberManager.updateStats();
+```
+
+### AssignmentManager API
+
+```javascript
+// Renderizar asignaciones
+AssignmentManager.render();
+
+// Asignar miembro a proyecto
+AssignmentManager.assignMemberToProject(memberId, projectId);
+
+// Remover asignación
+AssignmentManager.removeMemberFromProject(memberId, projectId);
+```
+
+### GlobalStatsManager API
+
+```javascript
+// Actualizar estadísticas globales
+GlobalStatsManager.updateStats();
+
+// Calcular puntuación de productividad
+GlobalStatsManager.calculateProductivityScore();
 ```
 
 ### NotificationSystem API
