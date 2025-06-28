@@ -566,30 +566,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 - **Comunidad Open Source**: Por la inspiración y recursos
 - **MDN Web Docs**: Por la documentación excepcional
 
-## 📞 Contacto y Soporte
 
-### 👨‍💻 **Desarrollador**
-- **Nombre**: Tu Nombre
-- **Email**: tu.email@ejemplo.com
-- **GitHub**: [@tu-usuario](https://github.com/tu-usuario)
-- **LinkedIn**: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-
-### 🐛 **Reportar Bugs**
-- Usa el [Issue Tracker](https://github.com/tu-usuario/dashboard-proyectos/issues)
-- Incluye pasos para reproducir el error
-- Especifica navegador y versión
-
-### 💡 **Solicitar Features**
-- Crea un [Feature Request](https://github.com/tu-usuario/dashboard-proyectos/issues/new?template=feature_request.md)
-- Describe el caso de uso
-- Explica el beneficio esperado
-
-### 📚 **Documentación Adicional**
-- [Wiki del Proyecto](https://github.com/tu-usuario/dashboard-proyectos/wiki)
-- [Guía de Desarrollo](docs/DEVELOPMENT.md)
-- [Changelog](CHANGELOG.md)
-
----
 
 <div align="center">
 
